@@ -1,7 +1,7 @@
 name: circRNA_py2
 channels:
-  - conda-forge    # prioritize for compatibility
-  - bioconda       # requires conda-forge above it
+  - conda-forge    
+  - bioconda       
   - defaults
 dependencies:
   - python=2.7
@@ -9,7 +9,7 @@ dependencies:
   - samtools
   - pysam=0.15.4
   - pip
-  - openblas       # optimized linear algebra backend
-  - blas=1.1=openblas  # force OpenBLAS for BLAS linkage
+  - openblas      
+  - blas=1.1=openblas  
   - pip:
-      - numpy==1.16.6  # install numpy via pip to avoid conda's BLAS linking issues
+      - numpy==1.16.6  
