@@ -1,12 +1,19 @@
-Before running the pipeline scripts, please create the required Conda environments to ensure all dependencies are installed correctly.
+Setup required directories
+Before running the pipeline, create the necessary folders by executing:
 
+```bash
+mkdir -p /mnt/Data/research/circRNA_project/hc_circRNA/{fastq,trimmed,fastqc,alignment,circRNA,logs}
+
+++++++++++++++++++++++++++++++
+
+Before running the pipeline scripts, please create the required Conda environments to ensure all dependencies are installed correctly.
 Run the following commands in your terminal:
 
 ```bash
 conda env create -f py2.yaml    
-conda env create -f py3.yml     
+conda env create -f py3.yml
 
-
+++++++++++++++++++++++++++++++
 
 # Downloading circRNA detection tools:
 
@@ -25,6 +32,7 @@ conda install -c bioconda circrna_finder
 which circrna_finder
 cp $(which circrna_finder) /mnt/Data/research/tools/
 
+++++++++++++++++++++++++++++++
 
 This file lists example SRA studies and accession numbers retrieved from the NCBI GEO database. Each entry includes the exact advanced search filters used. 
 
