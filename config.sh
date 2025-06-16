@@ -20,11 +20,9 @@ STAR_OUT="/mnt/Data/research/circRNA_project/hc_circRNA/alignment/circRNA_finder
 CIRI2_PATH="/mnt/Data/research/circRNA_project/hc_circRNA"
 FIND_CIRC_PATH="/mnt/Data/research/circRNA_project/hc_circRNA"
 CIRCRNA_FINDER_PATH="/mnt/Data/research/circRNA_project/hc_circRNA"
-CIRCTOOLS_PATH="/mnt/Data/research/circRNA_project/hc_circRNA/github/circtools/circtools"
-CIRC_DETECT_DIR="/mnt/Data/research/circRNA_project/hc_circRNA/alignment/circtools_SRR8060845"
-CIRCTOOLS_DIR="/mnt/Data/research/circRNA_project/hc_circRNA/github/circtools"
-CIRCTOOLS_DEST="/mnt/Data/research/circRNA_project/hc_circRNA/circtools_input"
-PREP_CIRCTOOLS="/mnt/Data/research/circRNA_project/hc_circRNA/github/circtools_detect/prep_circtools.sh"
+CIRC_SPLICE_SCRIPT="/mnt/Data/research/circRNA_project/hc_circRNA/CircSplice.pl"
+CIRC_SPLICE_REF_FLAT="/mnt/Data/research/circRNA_project/hc_circRNA/bed-refFlat_hg38.txt"
+
 
 PYTHON_BIN=$(which python)
 
@@ -34,9 +32,7 @@ TRIMMED_DIR="/mnt/Data/research/circRNA_project/hc_circRNA/trimmed"
 FASTQC_DIR="/mnt/Data/research/circRNA_project/hc_circRNA/fastqc"
 ALIGN_DIR="/mnt/Data/research/circRNA_project/hc_circRNA/alignment"
 CIRCRNA_DIR="/mnt/Data/research/circRNA_project/hc_circRNA/circRNA"
-LOG_DIR="/mnt/Data/research/circRNA_project/hc_circRNA/logs"
-CIRCTOOLS_ALIGN_DIR="/mnt/Data/research/circRNA_project/hc_circRNA/alignment/circtools_${SRA_ID}/star"      
-CIRCTOOLS_OUTPUT_DIR="$CIRCRNA_DIR/circtools"    
+LOG_DIR="/mnt/Data/research/circRNA_project/hc_circRNA/logs" 
 
 # Thread Count
 THREADS=8
